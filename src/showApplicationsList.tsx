@@ -1,4 +1,4 @@
-import { Action, ActionPanel, List, Toast, showToast } from "@raycast/api";
+import { Action, ActionPanel, Icon, List, Toast, showToast } from "@raycast/api";
 import { usePromise } from "@raycast/utils";
 import createDeepLink from "./helpers/createDeepLink";
 import getList from "./helpers/getList";
@@ -74,6 +74,7 @@ export default function ApplicationsList() {
               <Action.Open title="Open" application={item.name} target={item.path} />
               <Action.CreateQuicklink quicklink={{ link: createDeepLink(index + 1) }} />
               <Action
+                icon={Icon.ArrowUp}
                 title="Move to Top"
                 onAction={() => handleAppMove(item, "first")}
                 shortcut={{
@@ -82,6 +83,7 @@ export default function ApplicationsList() {
                 }}
               />
               <Action
+                icon={Icon.ArrowDown}
                 title="Move to Bottom"
                 onAction={() => handleAppMove(item, "last")}
                 shortcut={{
@@ -91,6 +93,7 @@ export default function ApplicationsList() {
               />
               {item.isSticky ? (
                 <Action
+                  icon={Icon.StarDisabled}
                   title="Unstick"
                   shortcut={{
                     modifiers: ["cmd"],
@@ -100,6 +103,7 @@ export default function ApplicationsList() {
                 />
               ) : (
                 <Action
+                  icon={Icon.Star}
                   title="Sticky"
                   onAction={() => handleAppStick(item)}
                   shortcut={{
@@ -109,6 +113,7 @@ export default function ApplicationsList() {
                 />
               )}
               <Action
+                icon={Icon.Trash}
                 title="Remove"
                 style={Action.Style.Destructive}
                 onAction={() => handleAppRemove(item)}
