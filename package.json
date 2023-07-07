@@ -11,30 +11,36 @@
   "license": "MIT",
   "commands": [
     {
-      "description": "Add current application to the end of list. Stickied applications will retain their existing positions.",
+      "description": "Add current application to the start of the list. Stickied applications will retain their existing positions.",
       "icon": "up-icon.png",
+      "keywords": [
+        "add"
+      ],
       "mode": "no-view",
       "name": "addApplicationToStart",
       "subtitle": "Start of List",
-      "title": "Add Application"
+      "title": "Prepend Application to List"
     },
     {
-      "description": "Add current application to the end of list. Stickied applications will retain their existing positions.",
+      "description": "Add current application to the end of the list. Stickied applications will retain their existing positions.",
       "icon": "down-icon.png",
+      "keywords": [
+        "add"
+      ],
       "mode": "no-view",
       "name": "addApplicationToEnd",
       "subtitle": "End of List",
-      "title": "Add Application"
+      "title": "Append Application to List"
     },
     {
-      "description": "List all marked applications",
+      "description": "List all marked applications.",
       "icon": "list-icon.png",
       "mode": "view",
       "name": "showApplicationsList",
       "title": "Show Applications List"
     },
     {
-      "description": "Clear all marked applications",
+      "description": "Clear all marked applications.",
       "icon": "trash-icon.png",
       "mode": "no-view",
       "name": "clearApplicationsList",
