@@ -49,46 +49,11 @@
           "type": "text"
         }
       ],
-      "description": "Opens the application at the specified position in the list",
+      "description": "Opens the application at the specified position in the list.",
       "icon": "number-icon.png",
       "mode": "no-view",
       "name": "openApplicationByPosition",
       "title": "Open Application at Position"
-    },
-    {
-      "description": "Opens the first application in the list",
-      "icon": "one-icon.png",
-      "mode": "no-view",
-      "name": "openApplicationOne",
-      "title": "Open Application at Position 1"
-    },
-    {
-      "description": "Opens the second application in the list",
-      "icon": "two-icon.png",
-      "mode": "no-view",
-      "name": "openApplicationTwo",
-      "title": "Open Application at Position 2"
-    },
-    {
-      "description": "Opens the third application in the list",
-      "icon": "three-icon.png",
-      "mode": "no-view",
-      "name": "openApplicationThree",
-      "title": "Open Application at Position 3"
-    },
-    {
-      "description": "Opens the fourth application in the list",
-      "icon": "four-icon.png",
-      "mode": "no-view",
-      "name": "openApplicationFour",
-      "title": "Open Application at Position 4"
-    },
-    {
-      "description": "Opens the fifth application in the list",
-      "icon": "five-icon.png",
-      "mode": "no-view",
-      "name": "openApplicationFive",
-      "title": "Open Application at Position 5"
     }
   ],
   "dependencies": {

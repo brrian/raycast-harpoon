@@ -1,5 +1,6 @@
 import { Action, ActionPanel, List, Toast, showToast } from "@raycast/api";
 import { usePromise } from "@raycast/utils";
+import createDeepLink from "./helpers/createDeepLink";
 import getList from "./helpers/getList";
 import moveItem from "./helpers/moveItem";
 import removeItem from "./helpers/removeItem";
@@ -71,6 +72,7 @@ export default function ApplicationsList() {
           actions={
             <ActionPanel>
               <Action.Open title="Open" application={item.name} target={item.path} />
+              <Action.CreateQuicklink quicklink={{ link: createDeepLink(index + 1) }} />
               <Action
                 title="Move to Top"
                 onAction={() => handleAppMove(item, "first")}
