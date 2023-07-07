@@ -41,6 +41,21 @@
       "title": "Clear Applications List"
     },
     {
+      "arguments": [
+        {
+          "name": "position",
+          "placeholder": "1",
+          "required": true,
+          "type": "text"
+        }
+      ],
+      "description": "Opens the application at the specified position in the list",
+      "icon": "number-icon.png",
+      "mode": "no-view",
+      "name": "openApplicationByPosition",
+      "title": "Open Application at Position"
+    },
+    {
       "description": "Opens the first application in the list",
       "icon": "one-icon.png",
       "mode": "no-view",
